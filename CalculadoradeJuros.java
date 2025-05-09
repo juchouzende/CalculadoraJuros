@@ -50,7 +50,17 @@ public class CalculadoradeJuros {
             
         } else if (op == 3) {
             // Entrada
+            System.out.println("\nTaxa");
+            System.out.print("Informe Juros: ");
+            Juros = entrada.nextInt();
+            System.out.print("Informe Capital: ");
+            Capital = entrada.nextInt();
+            System.out.print("Informe Tempo: ");
+            Tempo = entrada.nextInt();
 
+             // Cálculo da Taxa
+             Taxa = (Juros * 100) / (Capital * Tempo);
+            double taxaCalculada = (double)(Juros * 100) / (Capital * Tempo);
         
         } else if (op == 4) {
             // Entrada
