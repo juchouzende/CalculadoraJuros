@@ -37,8 +37,17 @@ public class CalculadoradeJuros {
 
         } else if (op == 2) { 
             // Entrada
+            System.out.println("\n Capital ");
+            System.out.print("Informe Juros: ");
+            Juros = entrada.nextInt();
+            System.out.print("Informe Taxa: ");
+            Taxa = entrada.nextInt();
+            System.out.print("Informe Tempo: ");
+            Tempo = entrada.nextInt();
 
-
+            Capital = (Juros * 100) / (Taxa * Tempo);
+            System.out.println(Juros + " * 100 / (" + Taxa + " * " + Tempo + ") = " + Capital);
+            
         } else if (op == 3) {
             // Entrada
 
@@ -53,3 +62,4 @@ public class CalculadoradeJuros {
 
     }
 }
+
